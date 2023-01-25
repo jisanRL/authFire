@@ -1,0 +1,50 @@
+<body>
+    
+    <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true" >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1><span id="header" routerLink="/">AuthFire</span></h1>
+          </div>
+  
+          <!-- login input  -->
+          <div class="modal-body" style="margin-top: 8px;" >
+            <form style="max-width:500px;margin:auto">
+              <h2 class="text-center">Login</h2>
+              
+              <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input type="email" class="form-control" name="email" [(ngModel)]="email" placeholder="Email address">
+              </div>
+  
+              <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password">
+              </div>
+             
+              <!-- <div style="float:right;margin-bottom:10px;">
+                <input type="checkbox"  >Show password
+              </div> -->
+              <button  class="btn" (click)="login()">Login</button>
+              <br><br>
+              <button  class="btn" (click)="loginWithGoogle()"><i class='fab fa-google' style="font-size:18px;color:white;padding:1px;"></i> Sign-up with Google</button>
+              
+              <br><br>
+              <div class="text-footer" >
+                <a routerLink="/register"> Register</a>
+                &nbsp;&nbsp;&nbsp;
+                <a routerLink="/forgotPassword">Forgot password</a>
+              
+              </div>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </body>
+  
+  

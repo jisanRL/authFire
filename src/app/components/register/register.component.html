@@ -1,0 +1,52 @@
+<body>
+    
+    <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        
+        <!-- register inputs -->
+        <div class="modal-content" >
+          <!-- header -->
+          <div class="modal-header">
+            <h1><span id="header" routerLink="/">AuthFire</span></h1>
+          </div>
+          <div class="modal-body" style="margin-top: 8px;">
+            <form #recievedUser="ngForm" style="max-width:500px;margin:auto">
+               
+             <h2 class="text-center">Register</h2>
+             <!-- <div class="input-container">
+               <i class="fa fa-user icon"></i>
+               <input type="text" class="input-field" id="name" placeholder="First name" name="giveName" >
+             </div>
+             <div class="input-container">
+                 <i class="fa fa-user icon"></i>
+                 <input type="text" class="input-field" id="name" placeholder="Last name" name="familyName" >
+             </div>
+              -->
+             <div class="input-container">
+                 <i class="fa fa-envelope icon"></i>
+                 <input type="text" class="input-field" id="email" placeholder="Email Address" name="email" [(ngModel)]="email" >
+             </div>
+             <div class="input-container">
+                 <i class="fa fa-key icon"></i>
+                 <input type="password" class="input-field" id="password" placeholder="password" name="password" [(ngModel)]="password">
+             </div>
+             <!-- <div style="float:right;margin-bottom:10px;">
+              <input type="checkbox" >Show Password
+             </div> -->
+             
+             <button type="button" class="btn btn-success" style="width: 100%;"  (click)="register()">Register</button>
+             <br><br>
+             <div class="text-footer">
+                <a routerLink="/login"> Login</a> 
+             </div>
+             <br>
+             <br>
+            </form>
+  
+          </div>
+ 
+      </div>
+      </div>
+    </div>
+    <hr>
+  </body>

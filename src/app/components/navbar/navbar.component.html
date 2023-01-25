@@ -1,0 +1,41 @@
+<div class="topnav" id="myTopnav">
+    <a href="javascript:void(0);" class="icon"  >
+      <i class="fa fa-bars"></i>
+    </a>
+    <span class="navbar-brand" id="logo" routerLink="/">AuthFire</span>
+
+    <div style="margin-right: 20px;">
+         <!-- show if user is logged in -->
+        <!-- <ng-container *ngIf="currentUser">
+            <a routerLink="/profile">{{currentUser.username}}</a>
+        </ng-container> -->
+        
+        <!-- show if user is logged in -->
+        <a routerLink="/login">Sign-in</a>
+        <!-- <ng-container *ngIf="!currentUser">
+            <a routerLink="/login">Sign-in</a>
+        </ng-container> -->
+        <a href="">z</a>
+        <a href="">name</a>
+        <a href="">Logout</a>
+        
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn">
+                <mat-icon>blur_on</mat-icon>
+            </button>
+            <div class="dropdown-content" id="dropdown-content">
+                <!-- <ng-container *ngIf="isAdmin">
+                    <li><a routerLink="/adminHome">Admin</a></li>
+                </ng-container> -->
+                <li><a href="#">Exclusive</a></li>
+                <li><a href="#">Favourites</a></li>
+                <li><a href="#">Following</a></li>
+                <li><a href="#">Saved </a></li>
+                <br><br><br><br>
+                <!-- <ng-container *ngIf="currentUser">
+                    <li><a (click)="logOut()">Logout</a></li>
+                </ng-container>  -->
+            </div>
+        </div>
+    </div>
+</div>
