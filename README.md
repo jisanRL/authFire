@@ -29,6 +29,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-FireBase: 
-    - command to install Firebase: npm install firebase @angular/fire --save
-    - firebase services used : ng deploy -- hosting, Authentication, Firestore, Realtime Database
+## FireBase: 
+    - command to install Firebase: 
+            - npm install firebase @angular/fire --save
+    - firebase services used : 
+            - ng deploy -- hosting, 
+            - Authentication, 
+            - Firestore, 
+            - Realtime Database
